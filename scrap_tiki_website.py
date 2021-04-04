@@ -42,7 +42,8 @@ def page_scrap(url):
 
   while True: #check if page with no product
     if len(products) == 0:
-      break
+      data.append('Stop')
+      return data
     else:
       for ldjson in soup.find_all('script'):
         if '"@type":"Product"' in ldjson.text:
@@ -144,14 +145,18 @@ def page_scrap(url):
 
 #scrap many page
 def web_scrap():
-  data = []
+  data = ['Start']
   page = 1
-
-  for page in range(1,11):
+  for page in range(1,15):
     tiki_urls = f'https://tiki.vn/dien-thoai-may-tinh-bang/c1789?page={page}&src=c.1789.hamburger_menu_fly_out_banner'
-    data += page_scrap(tiki_urls)
+    if data[-1] == 'Stop':
+      break
+    else:
+      data += page_scrap(tiki_urls)
     page += 1
-
+  print(page)
+  data.pop(-1)
+  data.pop(0)
   return data
 
 
