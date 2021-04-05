@@ -143,7 +143,7 @@ def page_scrap(url):
         
       return data
 
-#scrap many page
+#scrap all pages available
 def web_scrap():
   data = ['Start'] #set flag Start to start for loop below
   page = 1
