@@ -30,5 +30,9 @@ Here are some interesting bonus questions you might want to address during the p
 	=> The average price is around 4655692
 
 - What is the product with the most reviews and best reviews?
+	=> ProductID: 5659170738265
+	=> ProductName: Điện Thoại iPhone 12 Pro Max 128GB - Hàng Chính Hãng
+	=> Rating_Value: 5
+	=> Reviews: 419
 
 
