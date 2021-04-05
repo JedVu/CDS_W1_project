@@ -92,13 +92,13 @@ def page_scrap(url):
         
         #reviews number
         try:
-          d['reviews'] = re.sub('[()]','', product.find('div',{'class':'review'}).text)
+          d['reviews'] = int(re.sub('[()]','', product.find('div',{'class':'review'}).text))
         except:
-          d['reviews'] = 'No'
+          d['reviews'] = 0
         
         #rating value
         try:
-          d['rating_value'] = scripts_list[i]['aggregateRating']['ratingValue']
+          d['rating_value'] = int(scripts_list[i]['aggregateRating']['ratingValue'])
         except:
           d['rating_value'] = 0
 
