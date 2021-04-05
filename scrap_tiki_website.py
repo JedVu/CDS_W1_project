@@ -145,11 +145,11 @@ def page_scrap(url):
 
 #scrap many page
 def web_scrap():
-  data = ['Start']
+  data = ['Start'] #set flag Start to start for loop below
   page = 1
-  for page in range(1,15):
+  for page in range(1,15): #we can use range(1, 1000000000 what ever you want)
     tiki_urls = f'https://tiki.vn/dien-thoai-may-tinh-bang/c1789?page={page}&src=c.1789.hamburger_menu_fly_out_banner'
-    if data[-1] == 'Stop':
+    if data[-1] == 'Stop': #if the last element of data is 'Stop', we will stop script and return data
       break
     else:
       data += page_scrap(tiki_urls)
