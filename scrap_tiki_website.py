@@ -164,7 +164,7 @@ def web_scrap():
       data += page_scrap(tiki_urls)
     page += 1
   print(page)
-  return data[1:-1]
+  return data[1:-1] #remove 'Start' and 'Stop' elements
 
 
 data = web_scrap()
