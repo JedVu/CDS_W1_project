@@ -39,7 +39,18 @@ def page_scrap(url):
   products = soup.find_all('a', {'class':'product-item'})
   script = None
   scripts_list = []
-
+  
+  # other solution to Stop the script, when we found string 'Rất tiếc, không ...' we will stop code
+  # try: 
+  #   if soup.find('div', {'class':'VLxTK'}).text == 'Rất tiếc, không tìm thấy sản phẩm phù hợp với lựa chọn của bạn':
+  #     return data
+  #   else:
+  #     products = soup.find_all('a', {'class':'product-item'})
+  #     script = None
+  #     scripts_list = []
+  # except:
+  #   return data
+ 
   while True: #check if page with no product
     if len(products) == 0:
       data.append('Stop')
