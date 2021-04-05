@@ -1,0 +1,34 @@
+Selected groups are will present your weekly project:
+- Brieftly go through your solution notebook/python code
+- Discuss about how your team achieve the objectives
+	=> we separate all elements in 2 parts, use discord to discuss together, share colab notebook to help each other. We use google how to extract <script> tag => found json can help easily.
+- Any challenge and how you did solve it
+	=> use try except for each element when it sometimes doesn't appear on soup.
+	=> extract <script> tag
+	=> how to stop the code when we set 1000000 pages to scan when build code to funtions.
+	
+- Tips/tricks to do this project for other teams
+	=> use solution len(products) == 0 to set flag for stopping.
+	
+- What you learnt from doing the project
+	=> in fact is really different with excercise :)
+	=> working with partner is faster double time and less stressful :)
+	=> set delay_time more higher to get result quality higher, maybe we need set random delay_time in range 25-40
+	
+- Show the result of your project (pandas dataframe/csv)
+
+Here are some interesting bonus questions you might want to address during the presentation:
+- What is the category you choose? Why?
+	=> Mobile & Laptop, because at least we have the sum quantity product number, other groups we have text 7k+, 10k+
+	
+- How many products did u scrap?
+	=> many results each scrap: 418, 419, 420, 428, 430.
+	=> sometimes match with web, sometimes not. We found that tiki insert the "Ad" products to push sale, we need to remove products with "Ad" in title.
+	
+- What is the range and average price of that category?
+	=> Price range is from 75000 to 55880000
+	=> The average price is around 4655692
+
+- What is the product with the most reviews and best reviews?
+
+
