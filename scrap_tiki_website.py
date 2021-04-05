@@ -155,9 +155,7 @@ def web_scrap():
       data += page_scrap(tiki_urls)
     page += 1
   print(page)
-  data.pop(-1)
-  data.pop(0)
-  return data
+  return data[1:-1]
 
 
 data = web_scrap()
